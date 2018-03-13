@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="main-page" backgroundSpanUnderStatusBar="true">
+    <Page.actionBar>
+        <ActionBar title="Title" visibility="collapsed">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout orientation="vertical" class="main-container">
+        <Label text="The Forge" class="main-title" horizontalAlignment="center"/>
+        <StackLayout orientation="vertical" class="btn-main-container">
+            <Button horizontalAlignment="right" class="home-btn" text="Create" tap="{{ nav_create }}"/>
+            <Button horizontalAlignment="right" class="home-btn" text="Library" tap="{{ nav_library }}"/>
+            <Button horizontalAlignment="right" class="home-btn" text="About" tap="{{ nav_about }}"/>
+        </StackLayout>
+    </StackLayout>
+</Page>

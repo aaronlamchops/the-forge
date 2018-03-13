@@ -1,0 +1,29 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" loaded="pageLoaded" unloaded="navigateAway" class="sub-page" backgroundSpanUnderStatusBar="true">
+    <Page.actionBar>
+        <ActionBar title="Title" visibility="collapsed">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout orientation="vertical" class="container">
+        <Label text="Create" class="main-title" horizontalAlignment="center"/>
+
+        <lv:RadListView items="{{ race_list }}" class="race-list">
+            <lv:RadListView.listViewLayout>
+                <lv:ListViewLinearLayout scrollDirection="Vertical"/>
+            </lv:RadListView.listViewLayout>
+            <lv:RadListView.itemTemplate>
+                <StackLayout orientation="vertical" class="race-list-item">
+                    <Label text="{{ name }}" backgroundColor="white"/>
+                </StackLayout>
+            </lv:RadListView.itemTemplate>
+        </ListView>
+
+        <StackLayout orientation="horizontal" class="button-group_create">
+            <GridLayout rows="*, *" columns="*, *">
+                <Button row="0" col="0" class="btn_create" text="Back" tap="{{ nav_back }}"/>
+                <Button row="0" col="1" class="btn_create" text="Next" tap="{{ nav_back }}"/>   
+            </GridLayout>
+        </StackLayout>
+        
+
+    </StackLayout>
+</Page>

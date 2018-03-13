@@ -1,0 +1,94 @@
+﻿@import '~nativescript-theme-core/css/core.light.css';
+
+.main-page {
+    background-color: rgb(20, 58, 75);
+}
+
+.sub-page {
+    background-color: rgb(20, 58, 75);
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(123, 133, 138, 0.363);
+    color: rgb(206, 211, 214);
+}
+
+.main-container {
+    width: 90%;
+    height: 75%;
+    background-color: rgba(123, 133, 138, 0.363);
+    color: rgb(206, 211, 214);
+}
+
+.main-title {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 60%;
+    margin-top: 25;
+}
+
+.btn-main-container {
+    margin-top: 50;
+}
+
+.btn-create-container {
+    width: 60%;
+    height: 50%;
+}
+
+.button-group_create {
+    width: 100%;
+    height: 70%;
+    /* background-color: lightcoral; */
+}
+
+.home-btn {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 23%;
+    background-color: rgb(89, 115, 131);
+    color:  rgb(194, 204, 212);
+    width: 45%;
+    height: 15%;
+    margin: 10 20 10 10;
+}
+
+.btn_create {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 22%;
+    background-color: rgb(89, 115, 131);
+    color:  rgb(194, 204, 212);
+    width: 20%;
+    height: 55%;
+    margin: 35 20 10 10;
+}
+
+ListView {
+    margin-top: 0.5%;
+    width: 90%;
+    height: 75%;
+    background-color: rgb(20, 58, 75);
+}
+
+ListView.itemTemplate {
+    font-size: 50%;
+}
+
+.race-list {
+    separator-color: transparent;
+}
+
+.race-list-item {
+    width: 90%;
+    height: 20%;
+    background-color: rgb(100, 123, 133);
+    margin: 15 15;
+}
+
+.race-name {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 30%;
+    color: rgb(194, 204, 212);
+    text-align: center;
+    padding: 50% 0;
+}

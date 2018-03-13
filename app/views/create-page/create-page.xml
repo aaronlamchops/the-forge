@@ -1,0 +1,26 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" unloaded="navigateAway" class="sub-page" backgroundSpanUnderStatusBar="true">
+    <Page.actionBar>
+        <ActionBar title="Title" visibility="collapsed">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout orientation="vertical" class="container">
+        <Label text="Create" class="main-title" horizontalAlignment="center"/>
+
+        <ListView items="{{ race_list }}" class="race-list">
+            <ListView.itemTemplate>
+                <StackLayout orientation="vertical" class="race-list-item">
+                    <Label text="{{ name }}" class="race-name"/>
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
+
+        <StackLayout orientation="horizontal" class="button-group_create">
+            <GridLayout rows="*, *" columns="*, *">
+                <Button row="0" col="0" class="btn_create" text="Back" tap="{{ nav_back }}"/>
+                <Button row="0" col="1" class="btn_create" text="Next" tap="{{ nav_back }}"/>   
+            </GridLayout>
+        </StackLayout>
+        
+
+    </StackLayout>
+</Page>
