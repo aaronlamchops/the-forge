@@ -6,7 +6,7 @@
 	"nativescript": {
 		"id": "org.nativescript.dndcharactercreator",
 		"tns-ios": {
-			"version": "3.4.1"
+			"version": "4.0.1-2018-03-15-07"
 		}
 	},
 	"dependencies": {
@@ -17,7 +17,7 @@
 		"nativescript-loki": "^1.0.1",
 		"nativescript-theme-core": "~1.0.4",
 		"nativescript-ui-listview": "^3.5.1",
-		"tns-core-modules": "~3.4.0"
+		"tns-core-modules": "^4.0.0-2018-03-19-03"
 	},
 	"devDependencies": {
 		"nativescript-dev-typescript": "^0.6.0",

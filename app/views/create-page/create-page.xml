@@ -9,7 +9,7 @@
         <ListView items="{{ race_list }}" class="race-list">
             <ListView.itemTemplate>
                 <StackLayout orientation="vertical" class="race-list-item">
-                    <Label text="{{ name }}" class="race-name"/>
+                    <Label text="{{ name }}" id="race-label" class="race-name" tap="displayInfo"/>
                 </StackLayout>
             </ListView.itemTemplate>
         </ListView>

@@ -5,20 +5,11 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
 		CD45EE7C18DC2D5800FB50C0 /* app in Resources */ = {isa = PBXBuildFile; fileRef = CD45EE7A18DC2D5800FB50C0 /* app */; };
 		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
-		DA18D455F39F4265878F0E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633D1AA0685B422E8890B8B7 /* Assets.xcassets */; };
-		8BAD06FAEAA645C7BF39D8B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A71D1D6A1147D2934D65C5 /* LaunchScreen.storyboard */; };
-		F5712062076D4048BD4EF72E /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0BE0BC3B636F4A38ABEFCBC4 /* build.xcconfig */; };
-		F39E658A155C469ABE225D6E /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E27A6DB2C44CA6AA89D070 /* TNSWidgets.framework */; };
-		920FEB3AD81F4553B8DAEE71 /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3E27A6DB2C44CA6AA89D070 /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8812916EA6D492BBE05C9ED /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C32A05487D74B1780B5ABE9 /* CouchbaseLite.framework */; };
-		E1961CF72B31470FA07C7856 /* TNSListView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F64412F12594C9D97947E88 /* TNSListView.framework */; };
-		97697E52EF644E02BA5A2C96 /* TNSListView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F64412F12594C9D97947E88 /* TNSListView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7364D6188D06460781989D36 /* TNSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928F980A4A294182AD244E4E /* TNSCore.framework */; };
-		C6499988A64D49E18F98D0E5 /* TNSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 928F980A4A294182AD244E4E /* TNSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +19,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				920FEB3AD81F4553B8DAEE71 /* TNSWidgets.framework in Embed Frameworks */,
-				97697E52EF644E02BA5A2C96 /* TNSListView.framework in Embed Frameworks */,
-				C6499988A64D49E18F98D0E5 /* TNSCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,13 +36,6 @@
 		CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-debug.xcconfig"; sourceTree = "<group>"; };
 		CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-release.xcconfig"; sourceTree = "<group>"; };
 		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
-		633D1AA0685B422E8890B8B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = Assets.xcassets; path = "dndcharactercreator/Resources/Assets.xcassets"; sourceTree = "<group>"; fileEncoding = 4; };
-		03A71D1D6A1147D2934D65C5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = "dndcharactercreator/Resources/LaunchScreen.storyboard"; sourceTree = "<group>"; fileEncoding = 4; };
-		0BE0BC3B636F4A38ABEFCBC4 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = build.xcconfig; path = "dndcharactercreator/Resources/build.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; };
-		C3E27A6DB2C44CA6AA89D070 /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
-		3C32A05487D74B1780B5ABE9 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CouchbaseLite.framework; path = "$(SRCROOT)/../../node_modules/nativescript-couchbase/platforms/ios/CouchbaseLite.framework"; sourceTree = "<group>"; };
-		5F64412F12594C9D97947E88 /* TNSListView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSListView.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework"; sourceTree = "<group>"; };
-		928F980A4A294182AD244E4E /* TNSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSCore.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39E658A155C469ABE225D6E /* TNSWidgets.framework in Frameworks */,
-				B8812916EA6D492BBE05C9ED /* CouchbaseLite.framework in Frameworks */,
-				E1961CF72B31470FA07C7856 /* TNSListView.framework in Frameworks */,
-				7364D6188D06460781989D36 /* TNSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +71,6 @@
 		858B833018CA111C00AB12DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C3E27A6DB2C44CA6AA89D070 /* TNSWidgets.framework */,
-				3C32A05487D74B1780B5ABE9 /* CouchbaseLite.framework */,
-				5F64412F12594C9D97947E88 /* TNSListView.framework */,
-				928F980A4A294182AD244E4E /* TNSCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,9 +101,6 @@
 		E070579D1B39A9D000214BF1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				633D1AA0685B422E8890B8B7 /* Assets.xcassets */,
-				03A71D1D6A1147D2934D65C5 /* LaunchScreen.storyboard */,
-				0BE0BC3B636F4A38ABEFCBC4 /* build.xcconfig */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -166,7 +136,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TNS;
-				LastUpgradeCheck = 500;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Telerik;
 			};
 			buildConfigurationList = 858B832918CA111C00AB12DE /* Build configuration list for PBXProject "dndcharactercreator" */;
@@ -193,9 +163,6 @@
 			files = (
 				CD45EE7C18DC2D5800FB50C0 /* app in Resources */,
 				858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */,
-				DA18D455F39F4265878F0E94 /* Assets.xcassets in Resources */,
-				8BAD06FAEAA645C7BF39D8B2 /* LaunchScreen.storyboard in Resources */,
-				F5712062076D4048BD4EF72E /* build.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,13 +330,6 @@
 				PRODUCT_NAME = dndcharactercreator;
 				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
-					"\"$(SRCROOT)/../../node_modules/nativescript-couchbase/platforms/ios\"",
-					"\"$(SRCROOT)/../../node_modules/nativescript-ui-listview/platforms/ios\"",
-					"\"$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios\"",
-				);
 			};
 			name = Debug;
 		};
@@ -388,13 +348,6 @@
 				PRODUCT_NAME = dndcharactercreator;
 				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
-					"\"$(SRCROOT)/../../node_modules/nativescript-couchbase/platforms/ios\"",
-					"\"$(SRCROOT)/../../node_modules/nativescript-ui-listview/platforms/ios\"",
-					"\"$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios\"",
-				);
 			};
 			name = Release;
 		};

@@ -3,10 +3,12 @@
         <ActionBar title="Title" visibility="collapsed">
         </ActionBar>
     </Page.actionBar>
-    <StackLayout orientation="vertical" class="container">
-        <Label text="About" class="main-title" horizontalAlignment="center"/>
-        <StackLayout orientation="vertical" class="btn-container">
-            <Button horizontalAlignment="right" class="home-btn" text="Back" tap="{{ nav_back }}"/>
+    <StackLayout orientation="vertical" class="main-container">
+        <StackLayout orientation="vertical" class="sub-container">
+            <Label text="About" class="main-title" horizontalAlignment="center"/>
+            <StackLayout orientation="vertical" class="content">
+                <Button horizontalAlignment="right" class="home-btn" text="Back" tap="{{ nav_back }}"/>
+            </StackLayout>
         </StackLayout>
     </StackLayout>
 </Page>

@@ -1,0 +1,67 @@
+.sub-page {
+    background-color: rgb(207, 207, 207);
+}
+
+.main-title {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 60%;
+    margin-top: 25;
+    padding-bottom: 10;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    background-color: rgb(139, 87, 87);
+    color: rgb(206, 211, 214);
+}
+
+.race-name {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 30%;
+    color: rgb(207, 207, 207);
+    text-align: center;
+    padding: 50% 0;
+}
+
+.btn-create-container {
+    width: 60%;
+    height: 50%;
+}
+
+.button-group_create {
+    width: 100%;
+    height: 70%;
+    /* background-color: lightcoral; */
+}
+
+.btn_create {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 22%;
+    color:  rgb(207, 207, 207);
+    width: 20%;
+    height: 55%;
+    margin: 35 20 10 10;
+}
+
+ListView {
+    margin-top: 0.5%;
+    width: 100%;
+    height: 75%;
+    background-color: rgb(207, 207, 207);
+}
+
+ListView.itemTemplate {
+    font-size: 50%;
+}
+
+.race-list {
+    separator-color: transparent;
+}
+
+.race-list-item {
+    width: 65%;
+    height: 13%;
+    background-color: rgb(146, 145, 145);
+    margin: 15 15;
+}

@@ -1,0 +1,18 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" class="page" actionBarHidden="true" 
+    shownModally="onShownModally" loaded="onLoaded" unloaded="onUnloaded" backgroundSpanUnderStatusBar="true">
+    <Page.actionBar>
+        <ActionBar title="Title" visibility="collapsed">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout orientation="vertical" class="container">
+        <GridLayout class="grid-race-modal">
+            <StackLayout orientation="vertical">
+                <StackLayout orientation="vertical">
+                    <Label horizontalAlignment="right" id="race-title" class="title" text="{{ raceName }}"/>
+                    <TextView class="details" text="{{ raceDetails }}" editable="false" />
+                </StackLayout>
+                <Button horizontalAlignment="center" class="closeButton" text="Close" tap="closeModal"/>
+            </StackLayout>
+        </GridLayout>
+    </StackLayout>
+</Page>

@@ -1,0 +1,31 @@
+.main-page {
+    background-color: rgb(207, 207, 207);
+}
+
+.main-container {
+    width: 90%;
+    height: 85%;
+    background-color: rgb(139, 87, 87);
+    color: rgb(206, 211, 214);
+}
+
+.main-title {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 80%;
+    margin-top: 25;
+}
+
+.btn-main-container {
+    margin-top: 50;
+    background-color: rgb(207, 207, 207);
+}
+
+.home-btn {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 30%;
+    background-color: rgb(146, 145, 145);
+    color:  rgb(206, 211, 214);
+    width: 45%;
+    height: 15%;
+    margin: 15 20 15 10;
+}
