@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1430BCA6A7A44CF6AFF3C118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6872DC6A994DEE8DF3BFE6 /* Assets.xcassets */; };
+		3A9D97BEE0EE4DADB83E9AC9 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FC0B31361F4F3D84EC4D08 /* CouchbaseLite.framework */; };
+		3D773EE3821B406D9B04D047 /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE0898D7EC6341049A6AC229 /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66EF7CD53E04405A9B12D724 /* TNSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBF2E3FD4CEA464FA35D69CD /* TNSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6ABD1B667CBD4BAABE20A4DA /* TNSListView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A794E9E6246E4D78AF779BED /* TNSListView.framework */; };
+		771C4DE17EF64B65B0D29729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A2223903A54B098B1BAC15 /* LaunchScreen.storyboard */; };
+		7779C8C6A5B14A3ABC0F7EDE /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0898D7EC6341049A6AC229 /* TNSWidgets.framework */; };
 		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
+		875128EE5E17454ABA5EEAE8 /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D65CA4C3E664B9CB105DEE0 /* build.xcconfig */; };
+		A9240294D05341CE85584C66 /* TNSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF2E3FD4CEA464FA35D69CD /* TNSCore.framework */; };
+		C3F8CD9F557A47F9A395FA4D /* TNSListView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A794E9E6246E4D78AF779BED /* TNSListView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CD45EE7C18DC2D5800FB50C0 /* app in Resources */ = {isa = PBXBuildFile; fileRef = CD45EE7A18DC2D5800FB50C0 /* app */; };
 		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
 /* End PBXBuildFile section */
@@ -19,6 +29,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C3F8CD9F557A47F9A395FA4D /* TNSListView.framework in Embed Frameworks */,
+				66EF7CD53E04405A9B12D724 /* TNSCore.framework in Embed Frameworks */,
+				3D773EE3821B406D9B04D047 /* TNSWidgets.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -26,16 +39,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D6872DC6A994DEE8DF3BFE6 /* Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = Assets.xcassets; path = dndcharactercreator/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		4D65CA4C3E664B9CB105DEE0 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = build.xcconfig; path = dndcharactercreator/Resources/build.xcconfig; sourceTree = "<group>"; };
+		78A2223903A54B098B1BAC15 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = dndcharactercreator/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		858B832E18CA111C00AB12DE /* dndcharactercreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dndcharactercreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		858B833918CA111C00AB12DE /* dndcharactercreator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dndcharactercreator-Info.plist"; sourceTree = "<group>"; };
 		858B833B18CA111C00AB12DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		858B833F18CA111C00AB12DE /* dndcharactercreator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dndcharactercreator-Prefix.pch"; sourceTree = "<group>"; };
 		858B843318CA22B800AB12DE /* dndcharactercreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dndcharactercreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A794E9E6246E4D78AF779BED /* TNSListView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSListView.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework"; sourceTree = "<group>"; };
+		C9FC0B31361F4F3D84EC4D08 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CouchbaseLite.framework; path = "$(SRCROOT)/../../node_modules/nativescript-couchbase/platforms/ios/CouchbaseLite.framework"; sourceTree = "<group>"; };
 		CD45EE7A18DC2D5800FB50C0 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
 		CD62955C1BB2678900AE3A93 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = internal/main.m; sourceTree = SOURCE_ROOT; };
 		CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-debug.xcconfig"; sourceTree = "<group>"; };
 		CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-release.xcconfig"; sourceTree = "<group>"; };
 		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		DBF2E3FD4CEA464FA35D69CD /* TNSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSCore.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework"; sourceTree = "<group>"; };
+		FE0898D7EC6341049A6AC229 /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9D97BEE0EE4DADB83E9AC9 /* CouchbaseLite.framework in Frameworks */,
+				6ABD1B667CBD4BAABE20A4DA /* TNSListView.framework in Frameworks */,
+				A9240294D05341CE85584C66 /* TNSCore.framework in Frameworks */,
+				7779C8C6A5B14A3ABC0F7EDE /* TNSWidgets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +95,10 @@
 		858B833018CA111C00AB12DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9FC0B31361F4F3D84EC4D08 /* CouchbaseLite.framework */,
+				A794E9E6246E4D78AF779BED /* TNSListView.framework */,
+				DBF2E3FD4CEA464FA35D69CD /* TNSCore.framework */,
+				FE0898D7EC6341049A6AC229 /* TNSWidgets.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,6 +129,9 @@
 		E070579D1B39A9D000214BF1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D6872DC6A994DEE8DF3BFE6 /* Assets.xcassets */,
+				78A2223903A54B098B1BAC15 /* LaunchScreen.storyboard */,
+				4D65CA4C3E664B9CB105DEE0 /* build.xcconfig */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -136,8 +167,14 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TNS;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 500;
 				ORGANIZATIONNAME = Telerik;
+				TargetAttributes = {
+					858B83EF18CA22B800AB12DE = {
+						DevelopmentTeam = WS325K66FS;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 858B832918CA111C00AB12DE /* Build configuration list for PBXProject "dndcharactercreator" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -163,6 +200,9 @@
 			files = (
 				CD45EE7C18DC2D5800FB50C0 /* app in Resources */,
 				858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */,
+				1430BCA6A7A44CF6AFF3C118 /* Assets.xcassets in Resources */,
+				771C4DE17EF64B65B0D29729 /* LaunchScreen.storyboard in Resources */,
+				875128EE5E17454ABA5EEAE8 /* build.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +358,16 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WS325K66FS;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/nativescript-couchbase/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-listview/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dndcharactercreator/dndcharactercreator-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -340,7 +389,16 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WS325K66FS;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/nativescript-couchbase/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-listview/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dndcharactercreator/dndcharactercreator-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/dndcharactercreator/dndcharactercreator-Info.plist";
