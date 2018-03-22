@@ -6,18 +6,25 @@
     <StackLayout orientation="vertical" class="container">
         <Label text="Create" class="main-title" horizontalAlignment="center"/>
 
-        <ListView items="{{ race_list }}" class="race-list">
+        <ListView items="{{ race_list }}" id="race-listview" class="race-list">
             <ListView.itemTemplate>
-                <StackLayout orientation="vertical" class="race-list-item">
+                <!-- <StackLayout orientation="vertical" class="race-list-item">
                     <Label text="{{ name }}" id="race-label" class="race-name" tap="displayInfo"/>
-                </StackLayout>
+                    <StackLayout orientation="horizontal">
+                        <Button text="Select"/>
+                    </StackLayout>
+                </StackLayout> -->
+                <GridLayout rows="*,auto" columns="*,60%" class="race-list-item">
+                    <Label col="0" text="{{ name }}" id="{{ id }}" class="race-name" tap="selectRace"/>                    
+                    <Button col="1" text="&#xf44c;" id="{{ id }}" class="race-info-btn" tap="displayInfo"/>
+                </GridLayout>
             </ListView.itemTemplate>
         </ListView>
 
         <StackLayout orientation="horizontal" class="button-group_create">
             <GridLayout rows="*, *" columns="*, *">
-                <Button row="0" col="0" class="btn_create" text="Back" tap="{{ nav_back }}"/>
-                <Button row="0" col="1" class="btn_create" text="Next" tap="{{ nav_back }}"/>   
+                <Button row="0" col="0" class="btn_create" text="&#xf2ca;" tap="{{ nav_back }}"/>
+                <Button row="0" col="1" class="btn_create" text="&#xf30f;" tap="{{ nav_back }}"/>   
             </GridLayout>
         </StackLayout>
         

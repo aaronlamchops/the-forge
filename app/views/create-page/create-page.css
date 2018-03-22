@@ -12,16 +12,8 @@
 .container {
     width: 90%;
     height: 90%;
-    background-color: rgb(139, 87, 87);
+    background-color: rgb(139, 87, 87);             /* Primary Color */
     color: rgb(206, 211, 214);
-}
-
-.race-name {
-    font-family: 'Nodesto Caps Condensed';
-    font-size: 30%;
-    color: rgb(207, 207, 207);
-    text-align: center;
-    padding: 50% 0;
 }
 
 .btn-create-container {
@@ -36,8 +28,8 @@
 }
 
 .btn_create {
-    font-family: 'Nodesto Caps Condensed';
-    font-size: 22%;
+    font-family: 'Ionicons';
+    font-size: 30%;
     color:  rgb(207, 207, 207);
     width: 20%;
     height: 55%;
@@ -55,6 +47,22 @@ ListView.itemTemplate {
     font-size: 50%;
 }
 
+.race-name {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 30%;
+    color: rgb(226, 226, 226);
+    text-align: center;
+    padding: 50% 0;
+}
+
+.race-info-btn {
+    font-family: 'Ionicons';
+    font-size: 20%;
+    border-color: rgb(207, 207, 207);               /* Background Color */
+    background-color: rgb(146, 145, 145);            /* Secondary Trim Color */
+    color: rgb(226, 226, 226);                      /* A little brighter white to make seeing text a little easier */
+}
+
 .race-list {
     separator-color: transparent;
 }
@@ -62,6 +70,6 @@ ListView.itemTemplate {
 .race-list-item {
     width: 65%;
     height: 13%;
-    background-color: rgb(146, 145, 145);
+    background-color: rgb(146, 145, 145);           /* Secondary Background Color */
     margin: 15 15;
 }

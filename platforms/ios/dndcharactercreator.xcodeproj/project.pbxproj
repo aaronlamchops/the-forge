@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		1430BCA6A7A44CF6AFF3C118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6872DC6A994DEE8DF3BFE6 /* Assets.xcassets */; };
 		3A9D97BEE0EE4DADB83E9AC9 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FC0B31361F4F3D84EC4D08 /* CouchbaseLite.framework */; };

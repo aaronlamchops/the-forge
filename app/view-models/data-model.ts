@@ -19,6 +19,16 @@ export class DataModel extends Observable{
         return this.races;
     }
 
+    public getIdFromRace(race: string): string{
+        let id = '-1';
+        this.races.forEach(element => {
+            if(element.name == race){
+                id = element.id as string;
+            }
+        });
+        return id;                                // Will need to implement error handling later
+    }
+
     public async fetchRacesData(){
         await http.getJSON('https://api.myjson.com/bins/bwrxx').then((result: Array<object>) =>{
             result.forEach((race: any) => {
