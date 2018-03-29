@@ -17,12 +17,12 @@ export function onLoaded(args: EventData) {
 
     let page = <Page>args.object;
 
-    if (page.ios) {
-        let controller = frame.topmost().ios.controller;
-        let navigationBar = controller.navigationBar;
+    // if (page.ios) {
+    //     let controller = frame.topmost().ios.controller;
+    //     let navigationBar = controller.navigationBar;
 
-        navigationBar.barStyle = 1;
-    }
+    //     navigationBar.barStyle = 1;
+    // }
 }
 
 export function onUnloaded() {

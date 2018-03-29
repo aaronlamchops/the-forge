@@ -1,5 +1,6 @@
-@import '~nativescript-theme-core/css/core.light.css';
-
+* {
+    background-color: rgb(207, 207, 207);
+}
 
 .main-container {
     background-color: rgb(207, 207, 207);
@@ -21,6 +22,7 @@
 .main-title {
     font-family: 'Nodesto Caps Condensed';
     font-size: 60%;
+    background-color: rgb(139, 87, 87);
     margin-top: 15;
     margin-bottom: 10;
     color: rgb(207, 207, 207);

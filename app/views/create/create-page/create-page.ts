@@ -8,8 +8,8 @@ import * as view from 'ui/core/view';
 import * as frame from 'ui/frame';
 import * as http from 'http';
 import * as appSettings from 'application-settings';
-import * as navigation from '../navigation/navigation';
-import { DataModel } from '../../view-models/data-model';
+import * as navigation from '../../navigation/navigation';
+import { DataModel } from '../../../view-models/data-model';
 const RaceModal = 'views/race-modal/race-modal';
 
 
@@ -28,18 +28,22 @@ async function pageLoaded(args: EventData) {
     initRaceChosen();
 
     let source = fromObject({
+        nav_next: navigation.navigate_class_create,
         nav_back: navigation.navigate_back,
         race_list: dataModel.getRaces()
     });
 
-    if (page.ios) {
-        let controller = frame.topmost().ios.controller;
-        let navigationBar = controller.navigationBar;
-
-        navigationBar.barStyle = 1;
-    }
+    console.log('Page Loaded');
     
+    // if (page.ios) {
+    //     let controller = frame.topmost().ios.controller;
+    //     let navigationBar = controller.navigationBar;
+
+    //     navigationBar.barStyle = 1;
+    // }
+
     page.bindingContext = source;
+    // resetBackgroundSelection(page, args);
 }
 
 async function navigateAway() {
@@ -49,10 +53,9 @@ async function navigateAway() {
 function displayInfo(args): void {
     let page: Page = <Page>args.object.page;
     let sender = <view.View>args.object;
-    let label = <Label>view.getViewById(sender.parent, sender.id);
 
     let context = {
-        _raceName: label.text
+        _raceName: sender.id
     };
     
     page.showModal(RaceModal, context, () => {
@@ -64,7 +67,12 @@ function selectRace(args): void {
     let page: Page = <Page>args.object.page;
     let sender = <view.View>args.object;
     let label = <Label>view.getViewById(sender.parent, sender.id);
+    console.log(appSettings.getString('_raceChosen'));
+    console.log(chooseState);
     changeSelectionState(page, label);
+    console.log(appSettings.getString('_raceChosen'));
+    console.log(chooseState);
+    console.log('ID = ' + sender.id);
 }
 
 function initRaceChosen(): void {
@@ -100,6 +108,21 @@ function changeSelectionState(page: Page, label: Label): void {
             appSettings.setString('_raceChosen', label.text);
             label.backgroundColor = highlightColor;
             chooseState = true;
+        }
+    }
+}
+
+async function resetBackgroundSelection(page: Page, args: EventData) {
+    let sender = <view.View>args.object;
+    for(let index = 1; index <= dataModel.getLength(); index++) {
+        let check = '0' + index;
+        let element = <Label>view.getViewById(sender.parent, check);
+        console.log(check);
+        console.log(element);
+        console.log(element.backgroundColor);
+        if(element.backgroundColor == highlightColor || element.backgroundColor == undefined) {
+            element.backgroundColor = defaultBGColor;
+            console.log('reset bg color');
         }
     }
 }

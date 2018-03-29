@@ -29,6 +29,10 @@ export class DataModel extends Observable{
         return id;                                // Will need to implement error handling later
     }
 
+    public getLength(): number {
+        return this.races.length;
+    }
+
     public async fetchRacesData(){
         await http.getJSON('https://api.myjson.com/bins/bwrxx').then((result: Array<object>) =>{
             result.forEach((race: any) => {

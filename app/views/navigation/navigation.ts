@@ -9,7 +9,14 @@ let navigate_back = (args: EventData) => {
 
 let navigate_create_page = (args: EventData) => {
     let navigateEntry = {
-        moduleName: 'views/create-page/create-page'
+        moduleName: 'views/create/create-page/create-page'
+    }
+    topmost().navigate(navigateEntry);
+}
+
+let navigate_class_create = (args: EventData) => {
+    let navigateEntry = {
+        moduleName: 'views/create/class-create/class-create'
     }
     topmost().navigate(navigateEntry);
 }
@@ -28,5 +35,5 @@ let navigate_about = (args: EventData) => {
     topmost().navigate(navigateEntry);
 }
 
-export { navigate_back, navigate_create_page, navigate_library, navigate_about }
+export { navigate_back, navigate_create_page, navigate_class_create, navigate_library, navigate_about }
 

@@ -14,12 +14,12 @@ function pageLoaded(args: EventData) {
         nav_about: navigation.navigate_about
     });
 
-    if (page.ios) {
-        let controller = frame.topmost().ios.controller;
-        let navigationBar = controller.navigationBar;
+    // if (page.ios) {
+    //     let controller = frame.topmost().ios.controller;
+    //     let navigationBar = controller.navigationBar;
 
-        navigationBar.barStyle = 1;
-    }
+    //     navigationBar.barStyle = 1;
+    // }
     
     page.bindingContext = source;
 }
