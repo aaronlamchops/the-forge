@@ -9,7 +9,7 @@ function pageLoaded(args: EventData) {
 
     let page = <Page>args.object;
     let source = fromObject({
-        nav_create: navigation.navigate_create_page,
+        nav_create: navigation.navigate_race_create,
         nav_library: navigation.navigate_library,
         nav_about: navigation.navigate_about
     });

@@ -3,7 +3,7 @@ import { ObservableArray } from 'data/observable-array';
 import { Page, Color } from 'tns-core-modules/ui/page';
 import { Label } from 'ui/label';
 import { Button } from 'ui/button';
-import { ListView } from "tns-core-modules/ui/list-view";
+import { ListView, ItemEventData } from "tns-core-modules/ui/list-view";
 import * as view from 'ui/core/view';
 import * as frame from 'ui/frame';
 import * as http from 'http';
@@ -25,7 +25,7 @@ async function pageLoaded(args: EventData) {
     page.bindingContext = dataModel;
 
     await dataModel.fetchRacesData();
-    initRaceChosen();
+    // initRaceChosen();
 
     let source = fromObject({
         nav_next: navigation.navigate_class_create,

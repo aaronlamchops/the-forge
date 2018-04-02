@@ -5,7 +5,7 @@ export class Race {
     public abilityScore: {
         ability: string,
         value: number
-    }
+    };
     public age: string;
     public alignment: string;
     public size: string;

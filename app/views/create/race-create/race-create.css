@@ -45,6 +45,7 @@ ListView {
 
 ListView.itemTemplate {
     font-size: 50%;
+    background-color: rgb(207, 207, 207);
 }
 
 .race-name {
@@ -57,7 +58,8 @@ ListView.itemTemplate {
 
 .race-info-btn {
     font-family: 'Ionicons';
-    font-size: 20%;
+    font-size: 33%;
+    border-left-width: 5;
     border-color: rgb(207, 207, 207);               /* Background Color */
     background-color: rgb(146, 145, 145);            /* Secondary Trim Color */
     color: rgb(226, 226, 226);                      /* A little brighter white to make seeing text a little easier */
