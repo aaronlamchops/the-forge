@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Proficiency = /** @class */ (function () {
+    function Proficiency(armor, weap, save, skillProf) {
+        this.armor = armor;
+        this.weapons = weap;
+        this.savingThrows = save;
+        this.skillProficiencies = skillProf;
+    }
+    return Proficiency;
+}());
+exports.Proficiency = Proficiency;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJvZmljaWVuY3kuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJwcm9maWNpZW5jeS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBO0lBVUkscUJBQVksS0FBb0IsRUFBRSxJQUFtQixFQUFFLElBQW1CLEVBQUUsU0FBMkQ7UUFDbkksSUFBSSxDQUFDLEtBQUssR0FBRyxLQUFLLENBQUM7UUFDbkIsSUFBSSxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUM7UUFDcEIsSUFBSSxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUM7UUFDekIsSUFBSSxDQUFDLGtCQUFrQixHQUFHLFNBQVMsQ0FBQztJQUN4QyxDQUFDO0lBQ0wsa0JBQUM7QUFBRCxDQUFDLEFBaEJELElBZ0JDO0FBaEJZLGtDQUFXIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIFByb2ZpY2llbmN5IHtcblxuICAgIHB1YmxpYyBhcm1vcjogQXJyYXk8c3RyaW5nPjtcbiAgICBwdWJsaWMgd2VhcG9uczogQXJyYXk8c3RyaW5nPjtcbiAgICBwdWJsaWMgc2F2aW5nVGhyb3dzOiBBcnJheTxzdHJpbmc+O1xuICAgIHB1YmxpYyBza2lsbFByb2ZpY2llbmNpZXM6IHtcbiAgICAgICAgY2hvb3NlQW1tb3VudDogc3RyaW5nLFxuICAgICAgICBza2lsbHM6IEFycmF5PHN0cmluZz5cbiAgICB9O1xuXG4gICAgY29uc3RydWN0b3IoYXJtb3I6IEFycmF5PHN0cmluZz4sIHdlYXA6IEFycmF5PHN0cmluZz4sIHNhdmU6IEFycmF5PHN0cmluZz4sIHNraWxsUHJvZjogeyBjaG9vc2VBbW1vdW50OiBzdHJpbmcsIHNraWxsczogQXJyYXk8c3RyaW5nPiB9KXtcbiAgICAgICAgdGhpcy5hcm1vciA9IGFybW9yO1xuICAgICAgICB0aGlzLndlYXBvbnMgPSB3ZWFwO1xuICAgICAgICB0aGlzLnNhdmluZ1Rocm93cyA9IHNhdmU7XG4gICAgICAgIHRoaXMuc2tpbGxQcm9maWNpZW5jaWVzID0gc2tpbGxQcm9mO1xuICAgIH1cbn0iXX0=
