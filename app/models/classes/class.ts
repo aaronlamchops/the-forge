@@ -23,4 +23,44 @@ export class Class {
         this.levelTable = levelTable;
     }
 
+    public toString() {
+        let details = ``;
+        details +=  `Id: \t\t${ this.id }\n` + 
+                    `Name: \t${ this.name }\n` + 
+                    `Hit Dice: \t${ this.hitDice }\n\n` +
+                    `Proficiencies: \t\n\n${ this.convertProficiencies() }\n` +
+                    `Features: \n\n${ this.convertFeatures() }`;
+                // this.startingEquipment.toString() +
+                // this.levelTable.toString();
+        this.convertFeatures();
+        return details;
+    }
+
+    private convertProficiencies() {
+        let details = ``;
+        details +=  `\tArmor: \t\t\t${ this.proficiencies.armor }\n` + 
+                    `\tWeapons: \t\t${ this.proficiencies.weapons }\n` +
+                    `\tSaving Throws:\t`;
+        
+        this.proficiencies.savingThrows.forEach(sv => {
+            details += `${ sv }\n\t\t\t\t\t`;
+        });
+
+        details +=  `\n\tChoose Amount:\t${ this.proficiencies.chooseAmount }\n\t` + 
+                    `Skills:`;
+
+        this.proficiencies.skills.forEach(skill => {
+            details += `\t\t\t${ skill }\n\t\t`;
+        });
+        return details;
+    }
+
+    private convertFeatures() {
+        let details = ``;
+        this.features.forEach(feat => {
+            details +=  `${ feat.name.toUpperCase() }\n\n` +
+                        `${ feat.description.toLowerCase() }\n\n\n`;
+        });
+        return details;
+    }
 }

@@ -10,7 +10,7 @@ import * as http from 'http';
 import * as appSettings from 'application-settings';
 import * as navigation from '../../navigation/navigation';
 import { ClassViewModel } from '../../../view-models/classViewModel';
-
+const ClassModal = 'views/class-modal/class-modal';
 
 let _classViewModel = new ClassViewModel();
 
@@ -24,7 +24,7 @@ async function pageLoaded(args: EventData) {
     // console.log(appSettings.getString('_raceChosen'));
 
     let source = fromObject({
-        nav_next: navigation.navigate_class_create,
+        nav_next: navigation.navigate_back,
         nav_back: navigation.navigate_back,
         class_list: _classViewModel.getClassData()
     });
@@ -44,6 +44,17 @@ async function navigateAway() {
     _classViewModel.reset();
 }
 
+function displayInfo(args): void {
+    let page: Page = <Page>args.object.page;
+    let sender = <view.View>args.object;
 
+    let context = {
+        _className: sender.id
+    };
+    
+    page.showModal(ClassModal, context, () => {
+        console.log("closed");
+    }, true);
+}
 
-export { pageLoaded, navigateAway };
+export { pageLoaded, navigateAway, displayInfo };
