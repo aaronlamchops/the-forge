@@ -21,23 +21,34 @@ async function pageLoaded(args: EventData) {
     page.bindingContext = _classViewModel;
 
     await _classViewModel.resolveClassData();
-    // console.log(appSettings.getString('_raceChosen'));
+    initClassChosen();
 
     let source = fromObject({
         nav_next: navigation.navigate_back,
         nav_back: navigation.navigate_back,
         class_list: _classViewModel.getClassData()
     });
-
-    // if (page.ios) {
-    //     let controller = frame.topmost().ios.controller;
-    //     let navigationBar = controller.navigationBar;
-
-    //     navigationBar.barStyle = 1;
-    // }
-    
     
     page.bindingContext = source;
+}
+
+function selectClass(args): void {
+    let page: Page = <Page>args.object.page;
+    let sender = <view.View>args.object;
+    let label = <Label>view.getViewById(sender.parent, sender.id);
+
+    console.log(appSettings.getString('_classChosen'));
+    appSettings.setString('_classChosen', label.text);
+    console.log(appSettings.getString('_classChosen'));
+}
+
+function initClassChosen(): void {
+    if(!appSettings.hasKey('_classChosen')) {
+        appSettings.setString('_classChosen', 'none');
+    }
+    else{
+        appSettings.setString('_classChosen', 'none');
+    }
 }
 
 async function navigateAway() {
@@ -57,4 +68,4 @@ function displayInfo(args): void {
     }, true);
 }
 
-export { pageLoaded, navigateAway, displayInfo };
+export { pageLoaded, navigateAway, displayInfo, selectClass };

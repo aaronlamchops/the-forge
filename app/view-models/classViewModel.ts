@@ -18,8 +18,9 @@ export class ClassViewModel extends Observable {
     }
 
     public async fetchClassData() {
-        // let response = await fetch('https://api.myjson.com/bins/6397b');
-        let response = await fetch('https://api.myjson.com/bins/s6reb');
+        // let response = await fetch('https://api.myjson.com/bins/6397b'); <-- DEPRICATED
+        // let response = await fetch('https://api.myjson.com/bins/s6reb'); <-- DEPRICATED
+        let response = await fetch('https://theforge-api.herokuapp.com/api/v1/classes');
         let clss = await response.json();
         return clss;
     }

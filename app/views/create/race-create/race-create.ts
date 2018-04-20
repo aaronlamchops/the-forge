@@ -24,8 +24,6 @@ async function pageLoaded(args: EventData) {
         race_list: dataModel.getRaces()
     });
 
-    console.log('Page Loaded');
-
     page.bindingContext = source;
 }
 
