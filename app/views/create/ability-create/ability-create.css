@@ -1,0 +1,155 @@
+.sub-page {
+    background-color: rgb(218, 223, 228);
+}
+
+.main-title {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 60%;
+    margin-top: 25;
+    padding-bottom: 10;
+}
+
+.container {
+    width: 90%;
+    height: 90%;           
+    background-color: rgb(63, 114, 148);      /* Primary Color */
+    color: white;
+}
+
+
+
+/* ABILITY SCORES GROUP MIDDLE */
+
+
+
+.ability_container {
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+    height: 75%;
+}
+
+.ability_label {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 24;
+    border-width: 4 2 0 2;
+    border-color: rgb(218, 223, 228);
+    height: 25%;
+    text-align: center;
+    background-color: rgb(91, 182, 224);
+    color: white;
+}
+
+
+/* MOD SCORES GROUP MIDDLE */
+
+
+.mod_stack {
+    height: 25%;
+    width: 100%;
+}
+
+.mod_label {
+    height: 100%;
+    width: 50%;
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 22;
+    background-color: rgb(218, 223, 228);
+    text-align: right;
+    color: white;
+}
+
+.modifier {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 22;
+    background-color: rgb(218, 223, 228);
+    color: rgb(151, 151, 151);
+    text-align: center;
+    height: 100%;
+    width: 50%;
+}
+
+
+/* RACIAL GROUP MIDDLE */
+
+
+.racial_stack {
+    height: 25%;
+    width: 100%;
+}
+
+.racial_label {
+    height: 100%;
+    width: 50%;
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 22;
+    background-color: rgb(218, 223, 228);
+    text-align: right;
+    color: white;
+}
+
+.racial_mod {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 22;
+    background-color: rgb(218, 223, 228);
+    color: rgb(151, 151, 151);
+    text-align: center;
+    height: 100%;
+    width: 50%;
+}
+
+
+
+/* BASE SCORES GROUP MIDDLE */
+
+
+.base_score_stack {
+    height: 25%;
+    width: 100%;
+}
+
+.base_score_label {
+    height: 100%;
+    width: 50%;
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 22;
+    background-color: rgb(218, 223, 228);
+    text-align: right;
+    color: white;
+}
+
+.base_score_text {
+    font-family: 'Nodesto Caps Condensed';
+    font-size: 22;
+    background-color: rgb(218, 223, 228);
+    color: rgb(151, 151, 151);
+    text-align: center;
+    height: 100%;
+    width: 50%;
+}
+
+
+/* BUTTON GROUP BOTTOM */
+
+
+.rnd_btn {
+    padding-top: 15%;
+    text-align: center;
+    font-family: 'Ionicons';
+    font-size: 30%;
+}
+
+.button-group_create {
+    width: 100%;
+    height: 70%;
+    /* background-color: lightcoral; */
+}
+
+.btn_create {
+    font-family: 'Ionicons';
+    font-size: 30%;
+    color:  white;
+    width: 20%;
+    height: 55%;
+    margin: 35 20 10 10;
+}
+

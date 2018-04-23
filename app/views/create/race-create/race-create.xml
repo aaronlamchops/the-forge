@@ -16,9 +16,9 @@
         </ListView>
 
         <StackLayout orientation="horizontal" class="button-group_create">
-            <GridLayout rows="*, *" columns="*, *">
+            <GridLayout rows="*, *" columns="*, *, *">
                 <Button row="0" col="0" class="btn_create" text="&#xf2ca;" tap="{{ nav_back }}"/>
-                <Button row="0" col="1" class="btn_create" text="&#xf30f;" tap="{{ nav_next }}"/>   
+                <Button row="0" col="2" class="btn_create" text="&#xf30f;" tap="{{ nav_next }}"/>   
             </GridLayout>
         </StackLayout>
     </StackLayout>

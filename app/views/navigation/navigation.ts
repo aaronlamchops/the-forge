@@ -21,6 +21,13 @@ let navigate_class_create = ():void => {
     topmost().navigate(navigateEntry);
 }
 
+let navigate_ability_create = ():void => {
+    let navigateEntry = {
+        moduleName: 'views/create/ability-create/ability-create'
+    }
+    topmost().navigate(navigateEntry);
+}
+
 let navigate_library = (args: EventData) => {
     let navigateEntry = {
         moduleName: 'views/library/library'
@@ -35,5 +42,5 @@ let navigate_about = (args: EventData) => {
     topmost().navigate(navigateEntry);
 }
 
-export { navigate_back, navigate_race_create, navigate_class_create, navigate_library, navigate_about }
+export { navigate_back, navigate_race_create, navigate_class_create, navigate_ability_create, navigate_library, navigate_about }
 

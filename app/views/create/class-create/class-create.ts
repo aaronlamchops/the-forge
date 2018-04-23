@@ -24,7 +24,7 @@ async function pageLoaded(args: EventData) {
     initClassChosen();
 
     let source = fromObject({
-        nav_next: navigation.navigate_back,
+        nav_next: navigation.navigate_ability_create,
         nav_back: navigation.navigate_back,
         class_list: _classViewModel.getClassData()
     });
@@ -40,6 +40,8 @@ function selectClass(args): void {
     console.log(appSettings.getString('_classChosen'));
     appSettings.setString('_classChosen', label.text);
     console.log(appSettings.getString('_classChosen'));
+
+    navigation.navigate_ability_create();
 }
 
 function initClassChosen(): void {

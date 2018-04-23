@@ -1,4 +1,4 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" unloaded="navigateAway" class="sub-page" backgroundSpanUnderStatusBar="true">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="sub-page" backgroundSpanUnderStatusBar="true">
     <Page.actionBar>
         <ActionBar title="Title" visibility="collapsed">
         </ActionBar>
@@ -6,20 +6,139 @@
     <StackLayout orientation="vertical" class="container">
         <Label text="Ability Scores" class="main-title" horizontalAlignment="center"/>
 
-        <!-- <ListView items="{{ class_list }}" id="class-listview" class="class-list">
-            <ListView.itemTemplate>
-                <GridLayout rows="*,auto" columns="*,60%" class="class-list-item">
-                    <Label col="0" text="{{ name }}" id="{{ id }}" class="class-name" />                    
-                    <Button col="1" text="&#xf44c;" id="{{ name }}" class="class-info-btn" tap="displayInfo"/>
-                </GridLayout>
-            </ListView.itemTemplate>
-        </ListView> -->
+        <GridLayout rows="*, *" columns="*, *, *" class="ability_container">
 
-        <!-- <StackLayout orientation="horizontal" class="button-group_create">
-            <GridLayout rows="*, *" columns="*, *">
-                <Button row="0" col="0" class="btn_create" text="&#xf2ca;" tap="{{ nav_back }}"/>
-                <Button row="0" col="1" class="btn_create" text="&#xf30f;" tap="{{ nav_next }}"/>   
+            <!-- STR -->
+            <StackLayout row="0" col="0" orientation="vertical">
+                <Label text="Strength" class="ability_label" />
+
+                <StackLayout orientation="horizontal" class="mod_stack">
+                    <Label text="modifer" class="mod_label" textWrap="true"/>
+                    <Label text="+0" class="modifier" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="racial_stack">
+                    <Label text="racial bonus" class="racial_label" textWrap="true"/>
+                    <Label text="+0" class="racial_mod" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="base_score_stack">
+                    <Label text="base score" class="base_score_label" textWrap="true"/>
+                    <TextField hint="STR" text="" class="base_score_text"/>
+                </StackLayout>
+            </StackLayout>
+
+            <!-- DEX -->
+            <StackLayout row="0" col="1" orientation="vertical">
+                <Label text="Dexterity" class="ability_label" />
+
+                <StackLayout orientation="horizontal" class="mod_stack">
+                    <Label text="modifer" class="mod_label" textWrap="true"/>
+                    <Label text="+0" class="modifier" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="racial_stack">
+                    <Label text="racial bonus" class="racial_label" textWrap="true"/>
+                    <Label text="+0" class="racial_mod" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="base_score_stack">
+                    <Label text="base score:" class="base_score_label" textWrap="true"/>
+                    <TextField hint="DEX" text="" class="base_score_text"/>
+                </StackLayout>
+            </StackLayout>
+
+            <!-- CON -->
+            <StackLayout row="0" col="2" orientation="vertical">
+                <Label text="Constitution" class="ability_label" />
+
+                <StackLayout orientation="horizontal" class="mod_stack">
+                    <Label text="modifer" class="mod_label" textWrap="true"/>
+                    <Label text="+0" class="modifier" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="racial_stack">
+                    <Label text="racial bonus" class="racial_label" textWrap="true"/>
+                    <Label text="+0" class="racial_mod" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="base_score_stack">
+                    <Label text="base score:" class="base_score_label" textWrap="true"/>
+                    <TextField hint="CON" text="" class="base_score_text"/>
+                </StackLayout>
+            </StackLayout>
+
+            <!-- INT -->
+            <StackLayout row="1" col="0" orientation="vertical">
+                <Label text="Intelligence" class="ability_label" />
+
+                <StackLayout orientation="horizontal" class="mod_stack">
+                    <Label text="modifer" class="mod_label" textWrap="true"/>
+                    <Label text="+0" class="modifier" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="racial_stack">
+                    <Label text="racial bonus" class="racial_label" textWrap="true"/>
+                    <Label text="+0" class="racial_mod" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="base_score_stack">
+                    <Label text="base score:" class="base_score_label" textWrap="true"/>
+                    <TextField hint="INT" text="" class="base_score_text"/>
+                </StackLayout>
+            </StackLayout>
+
+            <!-- WIS -->
+            <StackLayout row="1" col="1" orientation="vertical">
+                <Label text="Wisdom" class="ability_label" />
+
+                <StackLayout orientation="horizontal" class="mod_stack">
+                    <Label text="modifer" class="mod_label" textWrap="true"/>
+                    <Label text="+0" class="modifier" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="racial_stack">
+                    <Label text="racial bonus" class="racial_label" textWrap="true"/>
+                    <Label text="+0" class="racial_mod" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="base_score_stack">
+                    <Label text="base score:" class="base_score_label" textWrap="true"/>
+                    <TextField hint="WIS" text="" class="base_score_text"/>
+                </StackLayout>
+            </StackLayout>
+
+            <!-- CHR -->
+            <StackLayout row="1" col="2" orientation="vertical">
+                <Label text="Charisma" class="ability_label" />
+
+                <StackLayout orientation="horizontal" class="mod_stack">
+                    <Label text="modifer" class="mod_label" textWrap="true"/>
+                    <Label text="+0" class="modifier" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="racial_stack">
+                    <Label text="racial bonus" class="racial_label" textWrap="true"/>
+                    <Label text="+0" class="racial_mod" textWrap="true"/>
+                </StackLayout>
+
+                <StackLayout orientation="horizontal" class="base_score_stack">
+                    <Label text="base score:" class="base_score_label" textWrap="true"/>
+                    <TextField hint="CHR" text="" class="base_score_text"/>
+                </StackLayout>
+            </StackLayout>
+
+        </GridLayout>
+
+        
+        
+
+        <StackLayout orientation="horizontal" class="button-group_create">
+            <GridLayout rows="*, *" columns="*, *, *">
+                <Button row="0" col="0" class="btn_create" text="&#xf2ca;" tap="{{ nav_back }}" />
+                <Button row="0" col="1" text="&#xf221;" tap="" class="rnd_btn" tap=""/>
+                <Button row="0" col="2" class="btn_create" text="&#xf30f;" tap="{{ nav_next }}" />   
             </GridLayout>
-        </StackLayout> -->
+        </StackLayout>
     </StackLayout>
 </Page>
