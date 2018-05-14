@@ -5,42 +5,39 @@ import { Label } from 'ui/label';
 import * as view from 'ui/core/view';
 import * as frame from 'ui/frame';
 import * as http from 'http';
-import { DataModel } from '../../view-models/data-model';
+import { RaceViewModel } from '../../view-models/raceViewModel';
+import { Race } from "../../models/races/race";
 
 var context: any;
 var closeCallback: Function;
-let dataModel = new DataModel();
+let _raceViewModel = new RaceViewModel();
 let details: string = "";
+let _racename: string;
 
 export function onLoaded(args: EventData) {
     console.log("RaceModal.onLoaded");
 
     let page = <Page>args.object;
-
-    // if (page.ios) {
-    //     let controller = frame.topmost().ios.controller;
-    //     let navigationBar = controller.navigationBar;
-
-    //     navigationBar.barStyle = 1;
-    // }
 }
 
 export function onUnloaded() {
     console.log("RaceModal.onUnloaded");
-    dataModel.reset();
+    _raceViewModel.reset();
     details = "";
 }
 
 export async function onShownModally(args) {
-    console.log("RaceModal.onShownModally, context: " + args.context);
+    console.log("RaceModal.onShownModally, context: " + args.context._raceName);
+    _racename = args.context._raceName;
     context = args.context;
     closeCallback = args.closeCallback;
 
     let page = <Page>args.object;
-    page.bindingContext = dataModel;
+    page.bindingContext = _raceViewModel;
 
-    await dataModel.fetchRacesData();           // HTTP call to fetch race data from JSON
-    await getDetails(context._raceName);        // async call in parallel with above
+    await _raceViewModel.resolveRaceData();
+    getDetails();
+
     let source = fromObject({
         raceName: context._raceName,
         raceDetails: details
@@ -53,22 +50,11 @@ export function closeModal(args) {              // callback to close modal
     closeCallback();
 };
 
-async function getDetails(raceName: string) {   // required async call to retrieve details on race
-    await dataModel.races.forEach(element => {
-        if(element.name == context._raceName){
-            let obj = element as Object;
-            for(let key in obj){
-                if(key == "abilityScore"){
-                    details += key + " : \n";
-                    for(let subkey in obj[key]){
-                        details += "\t\t\t" + obj[key][subkey] + "\n";
-                    }
-                    details += "\n";
-                }
-                else{
-                    details += key + " : " + obj[key] + "\n\n";
-                }
-            }
+async function getDetails() {
+    _raceViewModel.getRaces().forEach(element => {
+        let obj = element as Race;
+        if(obj.name === _racename){
+            details += obj.toString();
         }
     });
 }

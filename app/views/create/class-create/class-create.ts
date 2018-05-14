@@ -41,20 +41,12 @@ function selectClass(args): void {
     appSettings.setString('_classChosen', label.text);
     console.log(appSettings.getString('_classChosen'));
 
-    navigation.navigate_ability_create();
-}
-
-function initClassChosen(): void {
-    if(!appSettings.hasKey('_classChosen')) {
-        appSettings.setString('_classChosen', 'none');
+    // pass the class chosen as context to next screen
+    const classAndRace = {
+        class: _classViewModel.getByClassName(label.text),
+        race: page.navigationContext
     }
-    else{
-        appSettings.setString('_classChosen', 'none');
-    }
-}
-
-async function navigateAway() {
-    _classViewModel.reset();
+    navigation.navigate_ability_create(classAndRace);
 }
 
 function displayInfo(args): void {
@@ -68,6 +60,19 @@ function displayInfo(args): void {
     page.showModal(ClassModal, context, () => {
         console.log("closed");
     }, true);
+}
+
+function initClassChosen(): void {
+    if(!appSettings.hasKey('_classChosen')) {
+        appSettings.setString('_classChosen', 'none');
+    }
+    else{
+        appSettings.setString('_classChosen', 'none');
+    }
+}
+
+async function navigateAway() {
+    _classViewModel.reset();
 }
 
 export { pageLoaded, navigateAway, displayInfo, selectClass };

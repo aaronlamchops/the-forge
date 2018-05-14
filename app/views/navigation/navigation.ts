@@ -14,16 +14,18 @@ let navigate_race_create = (args: EventData) => {
     topmost().navigate(navigateEntry);
 }
 
-let navigate_class_create = ():void => {
+let navigate_class_create = (context):void => {
     let navigateEntry = {
-        moduleName: 'views/create/class-create/class-create'
+        moduleName: 'views/create/class-create/class-create',
+        context: context
     }
     topmost().navigate(navigateEntry);
 }
 
-let navigate_ability_create = ():void => {
+let navigate_ability_create = (context):void => {
     let navigateEntry = {
-        moduleName: 'views/create/ability-create/ability-create'
+        moduleName: 'views/create/ability-create/ability-create',
+        context: context
     }
     topmost().navigate(navigateEntry);
 }

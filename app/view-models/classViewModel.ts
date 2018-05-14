@@ -3,6 +3,7 @@ import { ObservableArray } from 'data/observable-array';
 import * as http from 'http';
 import { Class } from '../models/classes/class';
 
+//Singleton
 export class ClassViewModel extends Observable {
 
     public classData: ObservableArray<Class>;
@@ -15,6 +16,16 @@ export class ClassViewModel extends Observable {
 
     public getClassData() {
         return this.classData;
+    }
+
+    public getByClassName(name: string) {
+        let data;
+        this.classData.forEach(element => {
+            if(element.name == name) {
+                data = element;
+            }
+        });
+        return data;
     }
 
     public async fetchClassData() {

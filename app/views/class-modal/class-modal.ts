@@ -50,13 +50,6 @@ export function closeModal(args) {              // callback to close modal
 };
 
 function getDetails() {
-    // _classViewModel.getClassData().forEach(element => {
-    //     let obj = element as Object;
-    //     for(let key in obj){
-    //         details += key + " : " + obj[key] + "\n\n";
-    //     }
-        
-    // });
     _classViewModel.getClassData().forEach(element => {
         let obj = element as Class;
         details += obj.toString();
